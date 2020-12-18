@@ -16,6 +16,10 @@ class SpringJenkinsApplicationTests {
 
 	public static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplicationTests.class);
 
+	public SpringJenkinsApplicationTests() {
+		logger.info("Constructor executing...");
+	}
+	
 	@Test
 	public void contextLoads() {
 		logger.info("Test case executing...");
